@@ -8,6 +8,18 @@ namespace EssentialTraining
 {
     class ProgrammingLoops
     {
+        public string BreakAndContinue()
+        {
+            var sb = new StringBuilder();
+            var words = new List<string>() { "bread", "milk", "eggs", "cheese", "apples" };
+            foreach (var word in words)
+            {
+                if (word.StartsWith("m")) continue;
+                if (word.StartsWith("c")) break;
+
+                sb.AppendLine(word);
+            }
+        }
         public int DoWhileLoop()
         {
             var sum = 0;
