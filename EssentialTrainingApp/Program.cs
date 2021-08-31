@@ -33,6 +33,14 @@ namespace EssentialTrainingApp
             {
                 Console.WriteLine("Directory not found");
             }
+            catch(System.IO.FileNotFoundException ex)
+            {
+                Console.WriteLine("file not found");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("an unknown error occured " + ex.Message);
+            }
         }
         private static int CrazyMathProblem()
         {
