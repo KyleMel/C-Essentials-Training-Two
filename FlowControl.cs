@@ -8,6 +8,31 @@ namespace EssentialTraining
 {
     public class FlowControl
     {
+        public string SecondaryOrPrimary(string color)
+        {
+            var result = "";
+            switch (color.ToLower())
+            {
+                case "red":
+                    result = "Primary";
+                    //could have more statements
+                    break;
+
+                case "blue":
+                    result = "Primary";
+                    break;
+
+                case "yellow":
+                    result = "Primary";
+                    break;
+
+                default:
+                    result = "Secondary";
+                    break;
+
+            }
+            return result;
+        }
         public string PrimaryOrSecondary(string color)
         {
             var result = "";
